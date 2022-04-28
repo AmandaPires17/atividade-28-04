@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header header"
+    "sidenav content"
+    "footer footer";
+}
+
+#header, #content, #sidenav, #footer {
+  border: 1px solid green;
+}
+
+#header {
+  grid-area: header;
+  background-color: aquamarine;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer {
+  grid-area: footer;
+  background-color: aquamarine;
+  font-size: 50px;
+}
+#sidenav {
+  grid-area: sidenav;
+  padding: 30px;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(1, 156, 105);
+}
+
+#bloco1 {
+  background-color: #96C0EB;
+}
+#bloco2 {
+  background-color: #DEAAF2;
+}
+#bloco3 {
+  background-color: #FAA5A5;
+}
+#bloco4 {
+  background-color: #F7FAA5;
+}
+#bloco5 {
+  background-color: #95F59F;
+}
+#bloco6 {
+  background-color: #EDBD64;
+}
+#bloco7 {
+  background-color: #71EBEB;
+}
+#bloco8 {
+  background-color: #B2B6D6;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
